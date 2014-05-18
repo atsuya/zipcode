@@ -1,0 +1,26 @@
+{
+  "name": "zipcode",
+  "version": "0.0.0",
+  "description": "simple web api that returns a corresponding address for given zipcode. only works for zipcode in japan.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/atsuya/zipcode.git"
+  },
+  "author": "Atsuya Takagi <atsuya.takagi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atsuya/zipcode/issues"
+  },
+  "homepage": "https://github.com/atsuya/zipcode",
+  "private": true,
+  "dependencies": {
+    "express": "4.2.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
