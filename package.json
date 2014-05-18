@@ -18,10 +18,14 @@
   "homepage": "https://github.com/atsuya/zipcode",
   "private": true,
   "dependencies": {
+    "async": "^0.9.0",
+    "done-criteria": "^0.1.0",
     "express": "^4.2.0",
     "hiredis": "^0.1.16",
     "logfmt": "^1.1.2",
     "redis": "^0.10.1",
+    "underscore": "^1.6.0",
+    "underscore.string": "^2.3.3",
     "wakeitup": "^0.0.0"
   },
   "engines": {
