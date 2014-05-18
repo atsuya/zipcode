@@ -15,9 +15,13 @@ redisClient.auth(redisPassword);
 // server
 var app = express();
 app.use(logfmt.requestLogger());
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res){
-  res.send('Hello World');
+app.get('/:id', function(req, res){
+  redisClient.hgetall(req.params.id, function hmget(error, replies) {
+    if (error) { res.jsonp(403, {}); }
+    res.jsonp(replies);
+  });
 });
 
 app.get('/ping', function(req, res){
