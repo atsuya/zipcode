@@ -18,7 +18,8 @@
   "homepage": "https://github.com/atsuya/zipcode",
   "private": true,
   "dependencies": {
-    "express": "4.2.x"
+    "express": "4.2.x",
+    "logfmt": "1.1.x"
   },
   "engines": {
     "node": "0.10.x"
