@@ -69,7 +69,7 @@ Loader.prototype.loadFile = function (path, callback) {
         var division = value.name;
         var zipCode = value.zip_code;
 
-        self.redisClient.hmset(zipCode, { prefecture: prefecture, city: city, divisiton: division });
+        self.redisClient.hmset(zipCode, { prefecture: prefecture, city: city, division: division });
       });
     });
 
